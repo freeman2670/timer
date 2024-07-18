@@ -1,0 +1,34 @@
+body {
+    font-family: 'Manrope', 'Noto Sans', sans-serif;
+    background-color: #111a22;
+  }
+
+  .text-tracking {
+    letter-spacing: -0.015em;
+  }
+
+  .border-bottom {
+    border-bottom: 1px solid #243647;
+  }
+
+  .bg-primary {
+    background-color: #125aa1;
+  }
+
+  .bg-secondary {
+    background-color: #243647;
+  }
+
+  .text-light {
+    color: #ffffff;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
