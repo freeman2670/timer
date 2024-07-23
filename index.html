@@ -1,101 +1,27 @@
 
-To edit and refine the provided HTML code along with its embedded CSS (assuming Tailwind CSS), here's an updated version that refines some aspects for clarity and proper structure:
-
-html
-Копировать код
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pomodoro Timer</title>
-  <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
-
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-  <link rel="stylesheet" as="style" onload="this.rel='stylesheet'"
-        href="https://fonts.googleapis.com/css2?display=swap&amp;family=Manrope%3Awght%40400%3B500%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900">
-
-  <!-- Tailwind CSS -->
-  <link href="https://cdn.tailwindcss.com?plugins=forms,container-queries" rel="stylesheet">
-
- <!-- <link rel="stylesheet" href="style.css"> -->
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful Timer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+CL:wght@100..400&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="relative flex min-h-screen bg-primary dark group/design-root overflow-x-hidden">
-    <header class="border-bottom px-10 py-3">
-      <div class="flex items-center justify-between">
-        <div class="flex items-center gap-4 text-light">
-          <div class="size-4">
-            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M6 6H42L36 24L42 42H6L12 24L6 6Z" fill="currentColor"></path>
-            </svg>
-          </div>
-          <h2 class="text-lg font-bold leading-tight text-light text-tracking">Pomodoro</h2>
-        </div>
-        <div class="flex gap-8">
-          <div class="flex items-center gap-9">
-            <a class="text-sm font-medium leading-normal text-light" href="#">Features</a>
-            <a class="text-sm font-medium leading-normal text-light" href="#">Pricing</a>
-            <a class="text-sm font-medium leading-normal text-light" href="#">Resources</a>
-          </div>
-          <div class="flex gap-2">
-            <button class="flex min-w-[84px] max-w-[480px] h-10 px-4 bg-primary text-light text-sm font-bold leading-normal text-tracking">
-              <span class="truncate">Sign up</span>
-            </button>
-            <button class="flex min-w-[84px] max-w-[480px] h-10 px-4 bg-secondary text-light text-sm font-bold leading-normal text-tracking">
-              <span class="truncate">Log in</span>
-            </button>
-          </div>
-        </div>
-      </div>
-    </header>
-    <div class="px-40 flex justify-center py-5">
-      <div class="flex flex-col w-[512px] max-w-[960px] py-5">
-        <div class="flex gap-4 py-6 px-4">
-          <div class="flex flex-col items-stretch gap-4 flex-grow">
-            <div class="flex h-14 items-center justify-center rounded-xl px-3 bg-secondary">
-              <p class="text-lg font-bold leading-tight text-light text-tracking">00</p>
-            </div>
-            <div class="flex items-center justify-center">
-              <p class="text-sm font-normal leading-normal text-light">Hours</p>
-            </div>
-          </div>
-          <div class="flex flex-col items-stretch gap-4 flex-grow">
-            <div class="flex h-14 items-center justify-center rounded-xl px-3 bg-secondary">
-              <p class="text-lg font-bold leading-tight text-light text-tracking">25</p>
-            </div>
-            <div class="flex items-center justify-center">
-              <p class="text-sm font-normal leading-normal text-light">Minutes</p>
-            </div>
-          </div>
-          <div class="flex flex-col items-stretch gap-4 flex-grow">
-            <div class="flex h-14 items-center justify-center rounded-xl px-3 bg-secondary">
-              <p class="text-lg font-bold leading-tight text-light text-tracking">00</p>
-            </div>
-            <div class="flex items-center justify-center">
-              <p class="text-sm font-normal leading-normal text-light">Seconds</p>
-            </div>
-          </div>
-        </div>
-        <h2 class="text-[28px] font-bold leading-tight px-4 text-center pb-3 pt-5 text-light">Pomodoro Technique</h2>
-        <p class="text-base font-normal leading-normal px-4 text-center text-light">
-          The Pomodoro Technique is a time management method developed by Francesco Cirillo in the late 1980s. The technique uses a timer to break down work into intervals,
-          traditionally 25 minutes in length, separated by short breaks.
-        </p>
-        <div class="flex px-4 py-3">
-          <button class="flex min-w-[84px] max-w-[480px] h-10 px-4 flex-1 bg-secondary text-light text-sm font-bold leading-normal text-tracking">
-            <span class="truncate">Reset</span>
-          </button>
-        </div>
-        <div class="flex px-4 py-3">
-          <button class="flex min-w-[84px] max-w-[480px] h-10 px-4 flex-1 bg-primary text-light text-sm font-bold leading-normal text-tracking">
-            <span class="truncate">Start</span>
-          </button>
-        </div>
-      </div>
+<div class="timer-container">
+    <h1>Lior`s flexing timer</h1>
+
+    <div class="timer-display" id="timerDisplay">00:00:00.000</div>
+    <div class="timer-controls">
+        <button id="startStopBtn">Start</button>
+        <button id="resetBtn">Reset</button>
+        <button id="lapBtn">Lap</button>
     </div>
-  </div>
+    <div class="laps" id="laps"></div>
+</div>
+<script src="main.js"></script>
 </body>
-</h
+</html> 

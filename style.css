@@ -1,34 +1,64 @@
 body {
-    font-family: 'Manrope', 'Noto Sans', sans-serif;
-    background-color: #111a22;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f0f0f0;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
 
-  .text-tracking {
-    letter-spacing: -0.015em;
-  }
+* {
+  font-family: "Playwrite CL", cursive;
+}
 
-  .border-bottom {
-    border-bottom: 1px solid #243647;
-  }
+h1 {
+  transform: rotate(5deg);
+  margin-bottom: 40px;
+}
 
-  .bg-primary {
-    background-color: #125aa1;
-  }
+.timer-container {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
 
-  .bg-secondary {
-    background-color: #243647;
-  }
+.timer-display {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
 
-  .text-light {
-    color: #ffffff;
-  }
+.timer-controls button {
+  background: #007bff;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
 
-  .text-center {
-    text-align: center;
-  }
+  transition: background 0.3s;
+}
 
-  .truncate {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
+.timer-controls button:hover {
+  background: #0056b3;
+}
+
+.laps {
+  margin-top: 20px;
+  max-height: 200px;
+  overflow-y: auto;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+}
+
+.laps div {
+  background: #f9f9f9;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1.2em;
+}
